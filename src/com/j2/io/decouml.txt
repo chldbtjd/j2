@@ -1,0 +1,48 @@
+%%plantuml
+
+@startuml
+abstract class Movie{
+-description = "Unkown director":string
++String getDescription()
++abstract rate():int
+}
+class Choidonghun{
++Choidonghun()
++rate():int
+}
+class Kanghyungchul{
++Khyungchul()
++rate():int
+}
+class Leebyunghuon{
++Leebyunghuon()
++rate():int
+}
+class Coproduction{
++abstract getDescription():String
+}
+class Tazza{
++Tazza()
++String getDescription()
++rate():int
+}
+class SpeedScandl{
++SpeedScandl()
++String getDescription()
++rate():int
+}
+class Sunny{
++Sunny()
++String getDescription()
++rate():int
+}
+abstract class Movie
+Movie <|-- Choidonghun
+Movie <|-- Kanghyungchul
+Movie <|-- Coproduction
+Movie <-- Coproduction
+Movie <|-- Leebyunghuon
+Coproduction <|--Tazza
+Coproduction <|--SpeedScandl
+Coproduction <|--Sunny
+@enduml
