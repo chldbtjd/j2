@@ -21,18 +21,13 @@ public class StarbuzzCoffee {
   System.out.println(beverage3.getDescription() 
     + " $" + beverage3.cost());
  
-    Beverage beverage4  =  new IceEspresso();    
-    beverage4 = new Ice(beverage4);
+  
+  Beverage beverage4 = new ChocoLatte();
+  beverage4 = new Milk(beverage4);
+  beverage4 = new Whip(beverage4);
+  beverage4 = new CacaoChocolate(beverage4);
+  beverage4 = new WhiteChocolate(beverage4);
   System.out.println(beverage4.getDescription() 
     + " $" + beverage4.cost());
-      
-  
-  Beverage beverage5 = new IceDarkRoast();
-  beverage5 = new Mocha(beverage5);
-  beverage5 = new Mocha(beverage5);
-  beverage5 = new Whip(beverage5);
-  beverage5 = new Ice(beverage5);
-  System.out.println(beverage5.getDescription() 
-    + " $" + beverage5.cost());
  }
 }
